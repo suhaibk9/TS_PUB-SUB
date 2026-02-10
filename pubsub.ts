@@ -1,6 +1,7 @@
 //Create a pub sub library that can be plugged and used anywhere.
 //subscribe -> Event --> returns function f that will unscubscribe.
 //publish - takes an event and data and publish
+//this is an example of observer pattern.
 type Func = () => void;
 type Callback = (data: any) => void;
 type Events = Record<string, Array<Callback>>;
